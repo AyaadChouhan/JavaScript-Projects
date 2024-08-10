@@ -3,117 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .mainCont {
-      background: linear-gradient(135deg, #3b63b1, #4e085f);
-      padding: 10px;
-      width: 100%;
-      min-height: 100vh;
-    }
-
-    .TodoApp {
-      width: 100%;
-      max-width: 530px;
-      margin: 100px auto 20px;
-      background: #fff;
-      padding: 40px 30px 70px;
-      border-radius: 10px;
-    }
-
-    .h1 {
-      color: rgb(142, 138, 138);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 10px;
-    }
-
-    .headerImg {
-      height: 50px;
-      padding-left: 5px;
-    }
-
-    .inputDiv {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgb(226, 225, 225);
-      margin-bottom: 25px;
-      border-radius: 30px;
-      padding-left: 20px;
-      font-weight: 14px;
-    }
-
-    .inp {
-      outline: none;
-      flex: 1;
-      background: transparent;
-      border: none;
-      width: 80%;
-      border-radius: 30px;
-      text-align: left;
-      padding: 10px;
-      font-size: 15px;
-    }
-
-    #addBtn {
-      font-size: 15px;
-      outline: none;
-      border: none;
-      padding: 10px;
-      color: rgb(255, 255, 255);
-      width: 20%;
-      border-radius: 30px;
-      background-color: rgb(245, 94, 38);
-      cursor: pointer;
-    }
-    .list {
-      background-color: rgba(124, 126, 128, 0.141);
-      /* margin: 10px; */
-      border-radius: 10px;
-      align-items: center;
-      padding: 5px;
-    }
-    ul li {
-      font-size: 17px;
-      padding: 12px 8px 12px 50px;
-      list-style: none;
-      display: flex;
-      cursor: pointer;
-      position: relative;
-    }
-    ul li::before {
-      content: " ";
-      position: absolute;
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-      background-image: url(images/unchecked.png);
-      background-size: cover;
-      background-position: center;
-      top: 12px;
-      left: 8px;
-    }
-
-    #checked {    
-      color: #555;
-      text-decoration: line-through;
-    }
-    
-    #checked::before {
-      background-image: url(images/checked.png);
-    }
-
-  </style>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <body>
     <div class="mainCont">
       <div class="TodoApp">
@@ -126,15 +25,10 @@
           <button id="addBtn">Add</button>
         </div>
 
-        <div class="list">
-          <ul>
-            <li id="checked">Java</li>
-            <li>JavaScript</li>
-            <li>Angular</li>
-          </ul>
-        </div>
+        <div class="listCont"></div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
+
 </html>
