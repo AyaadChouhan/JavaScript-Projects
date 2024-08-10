@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .mainCont {
+    background: linear-gradient(135deg, #c8cdd5, #fa4b00);
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .TodoApp {
+    width: 100%;
+    max-width: 530px;
+    margin: 100px auto 20px;
+    background: #fff;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+
+  .h1 {
+    color: rgb(142, 138, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .headerImg {
+    height: 50px;
+    padding-left: 5px;
+  }
+
+  .inputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(226, 225, 225);
+    margin-bottom: 25px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-weight: 14px;
+  }
+
+  .inp {
+    outline: none;
+    flex: 1;
+    background: transparent;
+    border: none;
+    width: 80%;
+    border-radius: 30px;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  #addBtn {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    border-radius: 30px;
+    background-color: rgb(245, 94, 38);
+    cursor: pointer;
+  }
+  .listCont {
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+  }
+
+  li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+
+  #addBtn:hover {
+    background-color: rgb(198, 20, 20);
+  }
+
+  li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+
+  li.checked::before {
+    background-image: url(images/checked.png);
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #spanTag:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 50%;
+  }
+  #spanTag{
+      position: absolute;
+      top: 5px;
+      right: 0;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+  }
