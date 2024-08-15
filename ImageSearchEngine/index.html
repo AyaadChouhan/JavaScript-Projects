@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search Engine</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+      }
+      body {
+        background: #003366;
+        color: #fff;
+      }
+      h1 {
+        text-align: center;
+        margin: 100px auto 50px;
+        font-weight: 600;
+      }
+      #form {
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background-color: #0d2853;
+        border-radius: 10px;
+      }
+
+      #inp {
+        flex: 1;
+        height: 100%;
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 0 30px;
+        padding: 20px;
+      }
+      #btn {
+        height: 80px;
+        width: 100px;
+        background-color: orangered;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+      #imgCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      #showMoreBtn {
+        text-align: center;
+        display: block;
+        background-color: orangered;
+        margin: 10px auto 100px;
+        color: white;
+        height: 40px;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+      }
+    </style>
+
+    <h1>Image Search Engine</h1>
+    <form id="form">
+      <input type="text" id="inp" placeholder="enter your text" />
+      <button id="btn">search</button>
+    </form>
+
+    <div class="imgCont">
+      <!-- <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" />
+          <img src="https://picsum.photos/300/300" alt="" /> -->
+    </div>
+    <button id="showMoreBtn">Show-More</button>
+  </body>
+
+  <script>
+    const accessKey = "ahrVK9opS-gEz1-eiGS_Jfp2nYEwdyVIyyWWgq0LwmU";
+
+    const searchBtn = document.getElementById("btn");
+    const showMoreBtn = document.getElementById("showMoreBtn");
+    const imgCont = document.getElementById(".imgCont");
+    const input = document.getElementById("inp");
+
+    let keyword = "";
+    let page = 1;
+
+    async function createEl() {
+
+        
+      let createImg = document.createElement("img");
+      imgCont.append(createImg);
+    }
+
+    ahrVK9opS - gEz1 - eiGS_Jfp2nYEwdyVIyyWWgq0LwmU;
+  </script>
+</html>
